@@ -8,7 +8,7 @@
         font-size: 18pt;
         color: #ff5757;
         padding: 5px;
-        border: 1px solid #ffffff;
+        border: 1px solid transparent;
         justify-content: left;
         line-height: 1.5;
         height:85%;
@@ -58,11 +58,11 @@
     var greet;
 
     if (hrs < 12)
-        greet = 'good morning, your name.  ';
+        greet = 'good morning.  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'good afternoon, your name. ';
+        greet = 'good afternoon. ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'good evening, your name.  ';
+        greet = 'good evening.  ';
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
@@ -72,4 +72,3 @@
     `;
 </script> 
 </html>
-```
